@@ -5,7 +5,7 @@ from pages.locators import PasswordRecoveryPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
-url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'
+url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/required-action?execution=UPDATE_PASSWORD&client_id=account_b2c&tab_id=osDZg-tKqvE'
 
 
 class PasswordRecoveryPage():

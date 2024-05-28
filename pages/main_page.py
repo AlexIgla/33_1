@@ -1,9 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from selenium.webdriver.support.wait import WebDriverWait
 from pages.locators import MainPageLocators
-from selenium.webdriver.common.by import By
-import pytest
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 # создаем конструктор, который принимает browser — экземпляр webdriver.
@@ -66,11 +64,11 @@ class MainPage():
         result = product_slogan.text
         assert result == "Личный кабинет"
 
-    def should_be_tab_click_telefon(self):
-        tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
-        tab.click()
-        result = tab.text
-        assert "Телефон" == result
+    #def should_be_tab_click_telefon(self):
+       #tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
+        #tab.click()
+        #result = tab.text
+        #assert "Телефон" == result
 
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE)
@@ -118,7 +116,7 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         self.browser.current_url = result
-        assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login?theme%3Dlight&response_type=code&scope=openid&state=cb376b9f-59e8-4feb-9c37-5514d8a10e14&theme=light&auth_type'
+        assert result == self.browser.current_url, 'https://start.rt.ru/?tab=main'
 
     def should_be_tab_click_mail(self):
         tab = self.find_element(MainPageLocators.TAB_MAIL)
