@@ -1,5 +1,14 @@
 Финальный тестовый проект SkillFactory
 
+Инструменты:
+
+1. Google-таблицы;
+2. Среда программирования PyCharm последней версии;
+3. Интерпретатор Python 3.12; 
+4. Библиотеки - selenium 4.9.0, pytest-selenium 4.0.0, pytest 6.2.5; 
+5. Браузер Google Chrome 114.0.5735.199;
+6. Драйвер ChromeDriver 114.0.5735.90.
+
 Автоматизированное тестирование UI сайта: https://b2c.passport.rt.ru/ с использованием PyTest и Selenium.
 
 С тест-кейсами можно ознакомиться по ссылке: https://docs.google.com/spreadsheets/d/1JvrkekYm-PMxkd0aQb3cd77HIu412sDE/edit?usp=sharing&ouid=113009641680443339722&rtpof=true&sd=true
