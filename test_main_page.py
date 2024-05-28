@@ -1,6 +1,7 @@
 from pages.main_page import MainPage, url_main_page
-import pages.locators
+from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators
 import pytest
+from confest import browser
 
 
 # Тесты по порядку

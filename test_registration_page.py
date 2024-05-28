@@ -1,5 +1,6 @@
 from pages.registration_page import RegistrationPage, url_registration_page
 import pytest
+from confest import browser
 
 
 # Тесты идут по порядку

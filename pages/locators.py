@@ -44,8 +44,7 @@ class PasswordRecoveryPageLocators():
 
 
 class RegistrationPageLocators():
-    BUTTON_PAGE_REGISTER = (
-    By.CLASS_NAME, "rt-btn rt-btn--orange rt-btn--medium rt-btn--rounded register-form__reg-btn")
+    BUTTON_PAGE_REGISTER = (By.CLASS_NAME, "rt-btn rt-btn--orange rt-btn--medium rt-btn--rounded register-form__reg-btn")
     PAGE_LEFT = (By.ID, "page-left")
     INPUT_FIRST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
     INPUT_LAST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")

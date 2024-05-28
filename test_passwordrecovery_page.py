@@ -1,5 +1,6 @@
 from pages.passwordrecovery_page import PasswordRecoveryPage, url_passwordrecovery_page
 import pytest
+from confest import browser
 
 
 # Тесты идут по порядку

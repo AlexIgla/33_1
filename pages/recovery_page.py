@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators, PasswordRecoveryPageLocators
+from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators, PasswordRecoveryPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
@@ -82,3 +82,5 @@ class RecoveryPage():
         tab.login = self.find_element(RecoveryPageLocators.TAB_LOGIN)
         result = tab_login.click()
         assert result == "Неверный логин или текст с картинки"
+
+url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'
