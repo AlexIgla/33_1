@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators
+from pages.locators import MainPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 

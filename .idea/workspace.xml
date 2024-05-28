@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="падают тесты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recovery_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +48,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor": "Run",
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_correctness.executor": "Run",
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_product_slogan.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon.executor": "Run",
     "Python tests.Python tests for test_main_page.test_should_be_form_autorization.executor": "Run",
     "Python tests.Python tests for test_main_page.test_should_be_menu_autorization.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link.executor": "Run",
     "Python tests.Python tests in 33_1.executor": "Run",
     "Python tests.Python tests in test_main_page.py.executor": "Run",
     "Python tests.Python tests in test_passwordrecovery_page.py.executor": "Run",
@@ -76,29 +94,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form">
-    <configuration name="locators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Example1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/locators.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -121,26 +117,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="recovery_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/recovery_page.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -155,6 +144,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Example1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -173,7 +177,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_recovery_page.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,17 +188,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_recovery_page.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number" />
         <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters" />
-        <item itemvalue="Python.recovery_page" />
-        <item itemvalue="Python.locators" />
-        <item itemvalue="Python tests.Python tests in test_recovery_page.py" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form" />
+        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" />
+        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716895057545</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="падают тесты">
+      <option name="closed" value="true" />
+      <created>1716911011457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716911011457</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

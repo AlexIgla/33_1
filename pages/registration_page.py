@@ -1,12 +1,28 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators, PasswordRecoveryPageLocators
+from pages.locators import MainPageLocators, RegistrationPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
 
 class RegistrationPage():
+    def __init__(self, browser, url, timeout=5):
+        self.browser = browser
+        self.url = url
+        # команда для неявного ожидания со значением по умолчанию в 5c:
+        self.browser.implicitly_wait(timeout)
+
+    def find_element(self, locator, time=10):
+        return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
+                                                       message=f"Can't find element by locator {locator}")
+
+    def find_elements(self, locator, time=10):
+        return WebDriverWait(self.browser, time).until(EC.presence_of_all_elements_located(locator),
+                                                       message=f"Can't find elements by locator {locator}")
+
+    def open(self):
+        self.browser.get(self.url)
 
     def should_be_register_link(self):
         link = self.find_element(MainPageLocators.LINK_REGISTER)
@@ -72,7 +88,7 @@ class RegistrationPage():
         input_password_confirm.send_keys('AzwX1223')
         region_list.click()
         region_list.send_keys('Саратовская обл')
-        button_register = self.find_element(RegistrationPageLocators.BUTTON_REGISTER)
+        button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'

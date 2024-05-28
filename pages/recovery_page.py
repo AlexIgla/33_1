@@ -1,12 +1,24 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators, PasswordRecoveryPageLocators
+from pages.locators import RecoveryPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
 
 class RecoveryPage():
+    def __init__(self, browser, url, timeout=5):
+        self.browser = browser
+        self.url = url
+        # команда для неявного ожидания со значением по умолчанию в 5c:
+        self.browser.implicitly_wait(timeout)
+
+    def find_element(self, locator, time=10):
+        return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
+                                                       message=f"Can't find element by locator {locator}")
+
+    def open(self):
+        self.browser.get(self.url)
 
     # Номер тест-кейсов по порядку EXP-020.....
 
@@ -84,4 +96,4 @@ class RecoveryPage():
         assert result == "Неверный логин или текст с картинки"
 
 
-url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'
+url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?response_type=code&scope=openid&client_id=lk_b2c&redirect_uri=https%3A%2F%2Flk-api.rt.ru%2Fsso-auth%2F%3Fredirect%3Dhttps%253A%252F%252Flk.rt.ru%252F&state=%7B%22uuid%22%3A%224C105560-C9EC-4ABB-86F8-373A0DABCA9B%22%7D'

@@ -42,27 +42,27 @@ class TestBodyFromMainPage():
 
         # pytest -v --tb=line -m test_main_page.py
 
-    def test_should_be_correctness_number_of_characters(browser):
+    def test_should_be_correctness_number_of_characters(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_correctness_number_of_characters()
 
-    def test_should_be_autorization_by_a_registraited_user(browser):
+    def test_should_be_autorization_by_a_registraited_user(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_autorization_by_a_registraited_user()
 
-    def test_should_be_autorization_by_a_registraited_user(browser):
+    def test_should_be_autorization_by_a_registraited_user(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_autorization_by_a_registraited_user()
 
-    def test_should_be_tab_click_mail(browser):
+    def test_should_be_tab_click_mail(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_tab_click_mail()
 
-    def test_should_be_mail_field_correctness(browser):
+    def test_should_be_mail_field_correctness(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_mail_field_correctness()

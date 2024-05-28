@@ -1,14 +1,26 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators, PasswordRecoveryPageLocators
+from pages.locators import PasswordRecoveryPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
-url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/required-action?execution=UPDATE_PASSWORD '
+url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'
 
 
 class PasswordRecoveryPage():
+    def __init__(self, browser, url, timeout=5):
+        self.browser = browser
+        self.url = url
+        # команда для неявного ожидания со значением по умолчанию в 5c:
+        self.browser.implicitly_wait(timeout)
+
+    def find_element(self, locator, time=10):
+        return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
+                                                       message=f"Can't find element by locator {locator}")
+
+    def open(self):
+        self.browser.get(self.url)
 
     # Номер тест-кейсов по порядку TRK-028
 
@@ -18,7 +30,7 @@ class PasswordRecoveryPage():
         input_password_new.send_keys('123')
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.click()
-        result = input_newpassword.number
+        result = input_password_new.number
         assert result == "Длина пароля должна быть не менее 8 символов"
 
     def should_be_newpassword_passwordconfirm_field_correctness(self):
