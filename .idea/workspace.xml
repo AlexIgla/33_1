@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="падают тесты но уже лучше">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recovery_page.py" afterDir="false" />
-    </list>
+    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="падают тесты но уже лучше" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,50 +39,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_product_slogan.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail.executor": "Run",
-    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon.executor": "Run",
-    "Python tests.Python tests for test_main_page.test_should_be_form_autorization.executor": "Run",
-    "Python tests.Python tests for test_main_page.test_should_be_menu_autorization.executor": "Run",
-    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.executor": "Run",
-    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor": "Run",
-    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor": "Run",
-    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list.executor": "Run",
-    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link.executor": "Run",
-    "Python tests.Python tests in 33_1.executor": "Run",
-    "Python tests.Python tests in test_main_page.py.executor": "Run",
-    "Python tests.Python tests in test_passwordrecovery_page.py.executor": "Run",
-    "Python tests.Python tests in test_recovery_page.py.executor": "Run",
-    "Python tests.Python tests in test_registration_page.py.executor": "Run",
-    "Python.confest.executor": "Run",
-    "Python.locators.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_page.executor": "Run",
-    "Python.passwordrecovery_page.executor": "Run",
-    "Python.recovery_page.executor": "Run",
-    "Python.registration_page.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/PycharmProjects/Example1/33_1",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_product_slogan.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.test_should_be_form_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_main_page.test_should_be_menu_autorization.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in 33_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_main_page.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_passwordrecovery_page.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_recovery_page.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_registration_page.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.confest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.passwordrecovery_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recovery_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.registration_page.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PycharmProjects/Example1/33_1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PycharmProjects\Example1" />
@@ -265,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716916297900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="падают тесты но уже лучше">
+      <option name="closed" value="true" />
+      <created>1716922735553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716922735553</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
