@@ -61,4 +61,4 @@ class PasswordRecoveryPage():
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         self.browser.current_url = result
-        assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?client_id=account_b2c&tab_id=P2FZFyPlzzE'
+        assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'
