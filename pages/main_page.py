@@ -172,7 +172,7 @@ class MainPage():
     def should_be_field_login_plus_password_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
-        input_login.send_keys('rtkid_1716278020835')
+        input_login.send_keys('rtkid_171627802083')
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys("AzwX1223")
