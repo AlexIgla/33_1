@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators
+from locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators
 from selenium.webdriver.common.by import By
 import pytest
 
@@ -31,7 +31,7 @@ class MainPage():
 
     # метод is_element_present перехватывает исключение.
     # будет использоваться для проверки присутствия элемента на странице
-    # В него будем передавать два аргумента: как искать и собственно что искать.
+    # В него будем передавать два аргумента: как искать и что искать.
     def is_element_present(self, how, what):
         try:
             self.browser.find_element(how, what)
@@ -90,10 +90,10 @@ class MainPage():
     def should_be_field_correctness_phone_password(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-111-123-45-67")
+        input_phone.send_keys("+7-123-456-78-90")
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
-        input_password.send_keys("Ragnarock76/")
+        input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_phone.number, input_password.text
@@ -102,7 +102,7 @@ class MainPage():
     def should_be_correctness_number_of_characters(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-111-123-45-  ")
+        input_phone.send_keys("+7-123-456-78-  ")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_phone.number
@@ -111,10 +111,10 @@ class MainPage():
     def should_be_autorization_by_a_registraited_user(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-999-797-44-22")
+        input_phone.send_keys("+7-951-888-00-11")
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
-        input_password.send_keys("Ragnarock76/")
+        input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         self.browser.current_url = result
@@ -138,10 +138,10 @@ class MainPage():
     def should_be_autorization_by_mail_a_unregistraited_user(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
         input_mail.clear()
-        input_mail.send_keys("slash7@bk.ru")
+        input_mail.send_keys("qwerty@mail.ru")
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
-        input_password.send_keys("Ragnarock76/")
+        input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_mail.text, input_password.text
@@ -156,7 +156,7 @@ class MainPage():
     def should_be_login_field_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
-        input_login.send_keys('угмк')
+        input_login.send_keys('йцук')
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_login.text
@@ -172,10 +172,10 @@ class MainPage():
     def should_be_field_login_plus_password_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
-        input_login.send_keys('slash7')
+        input_login.send_keys('rtkid_1716278020835')
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
-        input_password.send_keys("Ragnarock76/")
+        input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_login.text, input_password.text

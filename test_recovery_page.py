@@ -1,4 +1,4 @@
-from .pages.recovery_page import RecoveryPage, url_recovery_page
+from pages.recovery_page import RecoveryPage, url_recovery_page
 import pytest
 
 

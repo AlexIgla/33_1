@@ -15,7 +15,7 @@ class PasswordRecoveryPage():
     def should_be_newpassword_field_correctness(self):
         input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
         input_password_new.clear()
-        input_password_new.send_keys('678')
+        input_password_new.send_keys('123')
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.click()
         result = input_newpassword.number
@@ -24,10 +24,10 @@ class PasswordRecoveryPage():
     def should_be_newpassword_passwordconfirm_field_correctness(self):
         input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
         input_password_new.clear()
-        input_password_new.sendkeys('REGnum678jk')
+        input_password_new.sendkeys('AzwX1223')
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.clear()
-        input_password_confirm.sendkeys('REGnum678jn')
+        input_password_confirm.sendkeys('AzwX1244')
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         result = input_password_new.text, input_password_confirm.text
@@ -36,10 +36,10 @@ class PasswordRecoveryPage():
     def should_be_newpassword_passwordconfirm_field_correctness(self):
         input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
         input_password_new.clear()
-        input_password_new.sendkeys('Ragnarock76/')
+        input_password_new.sendkeys('AzwX1223')
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.clear()
-        input_password_confirm.sendkeys('ragnarock76/')
+        input_password_confirm.sendkeys('azwX1223')
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         result = input_password_new.text, input_password_confirm.text

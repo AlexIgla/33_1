@@ -18,7 +18,7 @@ class RecoveryPage():
     def should_be_correctness_number_of_characters(self):
         input_phone = self.find_element(RecoveryPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-111-123-45-  ")
+        input_phone.send_keys("+7-123-456-78-  ")
         button_to_come_in = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
         button_to_come_in.click()
         result = input_phone.number
@@ -27,7 +27,7 @@ class RecoveryPage():
     def should_be_password_recovery_check_registered_number(self):
         input_phone = self.find_element(RecoveryPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-999-797-44-22")
+        input_phone.send_keys("+7-951-888-00-11")
         input_capcha = self.find_element(RecoveryPageLocators.INPUT_CAPCHA)
         input_capcha.clear()
         input_capcha.send_keys("PAun7GUV")
@@ -39,7 +39,7 @@ class RecoveryPage():
     def should_be_password_recovery_check_registered_mail(self, browser):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
         input_mail.clear()
-        input_mail.send_keys('slash7@bk.ru')
+        input_mail.send_keys('sanchez.ig.94@mail.ru')
         input_capcha = self.find_element(RecoveryPageLocators.INPUT_CAPCHA)
         input_capcha.clear()
         input_capcha.send_keys("3QP8y44")
@@ -57,7 +57,7 @@ class RecoveryPage():
     def should_be_button_continue(self):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
         input_mail.clear()
-        input_mail.send_keys('slash7@bk.ru')
+        input_mail.send_keys('sanchez.ig.94@mail.ru')
         input_capcha = self.find_element(RecoveryPageLocators.INPUT_CAPCHA)
         input_capcha.clear()
         input_capcha.send_keys("p8LApsy")
@@ -76,7 +76,7 @@ class RecoveryPage():
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
         input_mail.clear()
-        input_mail.send_keys('угмк')
+        input_mail.send_keys('йцук')
         button_continue = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
         button_continue.click()
         tab.login = self.find_element(RecoveryPageLocators.TAB_LOGIN)

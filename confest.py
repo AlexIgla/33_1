@@ -7,7 +7,7 @@ import pytest
 @pytest.fixture(scope="function")
 def browser():
     print("\nstart browser for test..")
-    browser = webdriver.Chrome("C:\Users\Валентина\Desktop\chromedriver.exe")
+    browser = webdriver.Chrome("")
     yield browser
     print("\nquit browser..")
     browser.quit()

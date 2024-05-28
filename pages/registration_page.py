@@ -16,7 +16,7 @@ class RegistrationPage():
     def should_be_field_first_name_correctness(self):
         input_first_name = self.find_element(RegistrationPageLocators.INPUT_FIRST_NAME)
         input_first_name.clear()
-        input_first_name.send_keys('Df')
+        input_first_name.send_keys('As')
         button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
         result = input_first_name.text
@@ -25,7 +25,7 @@ class RegistrationPage():
     def should_be_field_address_correctness(self):
         input_address = self.find_element(RegistrationPageLocators.INPUT_ADDRESS)
         input_address.clear()
-        input_address.send_keys("+7-111-123-45-  ")
+        input_address.send_keys("+7-123-456-78-  ")
         button_page_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_page_register.click()
         result = input_address.number
@@ -38,7 +38,7 @@ class RegistrationPage():
         assert result == "Регион"
 
     def should_be_password_field_correctness(self):
-        input_password = self.find_element(RegistrationPageLocator.INPUT_PASSWORD)
+        input_password = self.find_element(RegistrationPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys('')
         input_password.click()
@@ -48,7 +48,7 @@ class RegistrationPage():
     def should_be_password_confirm_field_correctness(self):
         input_password_confirm = self.find_element(RegistrationPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.clear()
-        input_password_confirm.send_keys('5623')
+        input_password_confirm.send_keys('562312589')
         input_password_confirm.click()
         result = input_password_confirm.number
         assert result == "Пароль должен содержать хотя бы одну заглавную букву"
@@ -58,21 +58,24 @@ class RegistrationPage():
     def should_be_check_telefone_sending_sms(self):
         input_first_name = self.find_element(RegistrationPageLocators.INPUT_FIRST_NAME)
         input_first_name.clear()
-        input_first_name.send_keys("Евлампий")
+        input_first_name.send_keys("Александр")
         input_last_name = self.find_element(RegistrationPageLocators.INPUT_LAST_NAME)
         input_last_name.clear()
-        input_last_name.send_keys("Титьков")
+        input_last_name.send_keys("Игольников")
         input_phone = self.find_element(RegistrationPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys("+7-111-123-45-67")
+        input_phone.send_keys("+7-123-456-78-90")
         input_password = self.find_element(RegistrationPageLocators.INPUT_PASSWORD)
         input_password.clear()
-        input_password.send_keys("REGnum678")
+        input_password.send_keys("AzwX1223")
         input_password_confirm.clear()
-        input_password_confirm.send_keys('REGnum678')
+        input_password_confirm.send_keys('AzwX1223')
         region_list.click()
-        region_list.send_keys('Ярославская обл')
+        region_list.send_keys('Саратовская обл')
         button_register = self.find_element(RegistrationPageLocators.BUTTON_REGISTER)
         button_register.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'
+
+
+url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?client_id=account_b2c&tab_id=IAXuUBpcRk8'

@@ -1,4 +1,5 @@
 from pages.main_page import MainPage, url_main_page
+import pages.locators
 import pytest
 
 
@@ -45,7 +46,7 @@ class TestBodyFromMainPage():
         main_page.open()
         main_page.should_be_correctness_number_of_characters()
 
-    def test_should_be_autorization_by_a_registraited_userp(browser):
+    def test_should_be_autorization_by_a_registraited_user(browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
         main_page.should_be_autorization_by_a_registraited_user()
