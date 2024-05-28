@@ -49,7 +49,7 @@ class MainPage():
 
     ####################### ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК #########################
 
-    # Номер тест-кейсов по порядку TRK-001.....
+    # Номер тест-кейсов по порядку EXP-002.....
 
     def should_be_menu_autorization(self):
         menu_autorization = self.find_element(MainPageLocators.PAGE_RIGHT)
