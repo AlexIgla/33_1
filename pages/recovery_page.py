@@ -8,7 +8,7 @@ import pytest
 
 class RecoveryPage():
 
-    # Номер тест-кейсов по порядку TRK-020.....
+    # Номер тест-кейсов по порядку EXP-020.....
 
     def should_be_recovery_form(self):
         recovery_form = self.find_element(RecoveryPageLocators.RECOVERY_FORM)
@@ -72,15 +72,16 @@ class RecoveryPage():
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?session_code=Y0VJ5ZrIyarhrjbmUPmjkjmFdYC9D6gD-rASQlwayCI&execution=1b1825d2-f76f-4706-8e25-4c71c1f7f120&client_id=account_b2c&tab_id=mHPSKFbKvLQ'
 
-    # Негативный тест TRK-027
+    # Негативный тест EXP-027
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
         input_mail.clear()
         input_mail.send_keys('йцук')
         button_continue = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
         button_continue.click()
-        tab.login = self.find_element(RecoveryPageLocators.TAB_LOGIN)
+        tab_login = self.find_element(RecoveryPageLocators.TAB_LOGIN)
         result = tab_login.click()
         assert result == "Неверный логин или текст с картинки"
+
 
 url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=v35qbq1RL4I'

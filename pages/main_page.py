@@ -81,7 +81,7 @@ class MainPage():
     def should_be_mobile_number_field_correctness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
-        input_phone.send_keys(input_phone)
+        input_phone.send_keys("+7-123-456-78-90")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_phone.number

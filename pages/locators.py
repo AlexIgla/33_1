@@ -1,16 +1,16 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators():
-    LOGO_RTK = (By.ID, "rt-logo main-header__logo")
+class MainPageLocators:
+    LOGO_RTK = (By.CLASS_NAME, "rt-logo main-header__logo")
     PAGE_LEFT = (By.ID, "page-left")
-    FORM_AUTORIZATION = (By.ID, "form.login-form")
-    PAGE_RIGHT = (By.ID, "page-right")
+    FORM_AUTORIZATION = (By.CLASS_NAME, "card-container__wrapper")
+    PAGE_RIGHT = (By.ID, "card-title")
     TAB_PHONE = (By.ID, "t-btn-tab-phone")
     TAB_MAIL = (By.ID, "t-btn-tab-mail")
     TAB_LOGIN = (By.ID, "t-btn-tab-login")
     TAB_LS = (By.ID, "t-btn-tab-ls")
-    INPUT_USERNAME = (By.ID, "username")
+    #INPUT_USERNAME = (By.ID, "username")#
     INPUT_PASSWORD = (By.ID, "password")
     INPUT_PHONE = (By.ID, "username")
     INPUT_MAIL = (By.ID, "username")
@@ -21,7 +21,7 @@ class MainPageLocators():
 
 
 class RecoveryPageLocators():
-    PAGE_RIGHT = (By.ID, "page-right")
+    PAGE_RIGHT = (By.ID, "card-title")
     TAB_PHONE = (By.ID, "t-btn-tab-phone")
     TAB_MAIL = (By.ID, "t-btn-tab-mail")
     TAB_LOGIN = (By.ID, "t-btn-tab-login")
@@ -33,8 +33,8 @@ class RecoveryPageLocators():
     INPUT_CAPCHA = (By.ID, "captcha")
     BUTTON_COMEBACK = (By.ID, "reset-back")
     BUTTON_CONTINUE = (By.ID, "reset")
-    RECOVERY_FORM = (By.ID, "card-container_wrapper")
-    CODE_INPUT_CONTAINER = (By.ID, "code-input-container_timeout")
+    RECOVERY_FORM = (By.CLASS_NAME, "card-container_wrapper")
+    CODE_INPUT_CONTAINER = (By.ID, "otp-code-timeout")
 
 
 class PasswordRecoveryPageLocators():
@@ -48,8 +48,8 @@ class RegistrationPageLocators():
     PAGE_LEFT = (By.ID, "page-left")
     INPUT_FIRST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
     INPUT_LAST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
-    CARD_MODAL = (By.ID, "card-modal_card")
+    #CARD_MODAL = (By.ID, "card-modal_card")#
     INPUT_ADDRESS = (By.ID, "address")
-    REGION_LIST = (By.CLASS_NAME, "rt-input rt-input--rounded rt-input--orange rt-input--actions")
+    REGION_LIST = (By.CLASS_NAME, "rt-input__input rt-select__input rt-input__input--rounded rt-input__input--orange")
     INPUT_PASSWORD = (By.ID, "password")
     INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")
