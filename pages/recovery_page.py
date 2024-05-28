@@ -5,9 +5,10 @@ from locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLoc
 from selenium.webdriver.common.by import By
 import pytest
 
+
 class RecoveryPage():
 
-#Номер тест-кейсов по порядку TRK-020.....
+    # Номер тест-кейсов по порядку TRK-020.....
 
     def should_be_recovery_form(self):
         recovery_form = self.find_element(RecoveryPageLocators.RECOVERY_FORM)
@@ -35,7 +36,6 @@ class RecoveryPage():
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?session_code=RpQteafuCWnxWZkmsk_5CKEUoyfAR2x2PUPtFFEtfsQ&execution=1b1825d2-f76f-4706-8e25-4c71c1f7f120&client_id=account_b2c&tab_id=B8z6Ht7_4rs'
 
-
     def should_be_password_recovery_check_registered_mail(self, browser):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
         input_mail.clear()
@@ -48,13 +48,11 @@ class RecoveryPage():
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?execution=7ca0b6f9-7c84-472b-94e2-a57c35eb6b08&client_id=account_b2c&tab_id=4JvtA2huco0'
 
-
     def should_be_button_comeback(self):
         link_comeback = self.find_element(RecoveryPageLocators.BUTTON_COMEBACK)
         link_comeback.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?execution=1b1825d2-f76f-4706-8e25-4c71c1f7f120&client_id=account_b2c&tab_id=mHPSKFbKvLQ'
-
 
     def should_be_button_continue(self):
         input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
@@ -68,21 +66,19 @@ class RecoveryPage():
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?execution=7ca0b6f9-7c84-472b-94e2-a57c35eb6b08&client_id=account_b2c&tab_id=4JvtA2huco0'
 
-
     def should_be_button_comeback_main_page(self):
         button_comeback = self.find_element(RecoveryPageLocators.BUTTON_COMEBACK)
         button_comeback.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?session_code=Y0VJ5ZrIyarhrjbmUPmjkjmFdYC9D6gD-rASQlwayCI&execution=1b1825d2-f76f-4706-8e25-4c71c1f7f120&client_id=account_b2c&tab_id=mHPSKFbKvLQ'
 
-    #Негативный тест TRK-027
+    # Негативный тест TRK-027
     def should_be_mail_field_correctness(self):
-       input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
-       input_mail.clear()
-       input_mail.send_keys('угмк')
-       button_continue = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
-       button_continue.click()
-       tab.login = self.find_element(RecoveryPageLocators.TAB_LOGIN)
-       result = tab_login.click()
-       assert result == "Неверный логин или текст с картинки"
-
+        input_mail = self.find_element(RecoveryPageLocators.INPUT_MAIL)
+        input_mail.clear()
+        input_mail.send_keys('угмк')
+        button_continue = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
+        button_continue.click()
+        tab.login = self.find_element(RecoveryPageLocators.TAB_LOGIN)
+        result = tab_login.click()
+        assert result == "Неверный логин или текст с картинки"

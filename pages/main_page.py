@@ -5,6 +5,7 @@ from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationP
 from selenium.webdriver.common.by import By
 import pytest
 
+
 # создаем конструктор, который принимает browser — экземпляр webdriver.
 # Указываем url, который будет использоваться для открытия страницы.
 class MainPage():
@@ -17,12 +18,12 @@ class MainPage():
     # создаем метод find_element (ищет один элемент и возвращает его)
     def find_element(self, locator, time=10):
         return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
-                                                      message=f"Can't find element by locator {locator}")
+                                                       message=f"Can't find element by locator {locator}")
 
     # создаем метод find_elements (ищет множество элементов и возвращает в виде списка)
     def find_elements(self, locator, time=10):
         return WebDriverWait(self.browser, time).until(EC.presence_of_all_elements_located(locator),
-                                                      message=f"Can't find elements by locator {locator}")
+                                                       message=f"Can't find elements by locator {locator}")
 
     # метод open должен открывать нужную страницу в браузере, используя метод get()
     def open(self):
@@ -46,12 +47,9 @@ class MainPage():
             return True
         return False
 
+    ####################### ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК #########################
 
-     ####################### ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК #########################
-
-    #Номер тест-кейсов по порядку TRK-001.....
-
-
+    # Номер тест-кейсов по порядку TRK-001.....
 
     def should_be_menu_autorization(self):
         menu_autorization = self.find_element(MainPageLocators.PAGE_RIGHT)
@@ -196,5 +194,6 @@ class MainPage():
         yield input_ls.click()
         result = input_ls.text
         assert result == "Проверьте, пожалуйста, номер лицевого счета"
+
 
 url_main_page = "https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login?theme%3Dlight&response_type=code&scope=openid&state=cb376b9f-59e8-4feb-9c37-5514d8a10e14&theme=light&auth_type"

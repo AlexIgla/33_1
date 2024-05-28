@@ -5,7 +5,8 @@ from locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLoc
 from selenium.webdriver.common.by import By
 import pytest
 
-class RegistrationPageLocators():
+
+class RegistrationPage():
 
     def should_be_register_link(self):
         link = self.find_element(MainPageLocators.LINK_REGISTER)
@@ -37,22 +38,22 @@ class RegistrationPageLocators():
         assert result == "Регион"
 
     def should_be_password_field_correctness(self):
-       input_password = self.find_element(RegistrationPageLocator.INPUT_PASSWORD)
-       input_password.clear()
-       input_password.send_keys('')
-       input_password.click()
-       result = input_password.text
-       assert result == "Длина пароля должна быть не менее 8 символов"
+        input_password = self.find_element(RegistrationPageLocator.INPUT_PASSWORD)
+        input_password.clear()
+        input_password.send_keys('')
+        input_password.click()
+        result = input_password.text
+        assert result == "Длина пароля должна быть не менее 8 символов"
 
     def should_be_password_confirm_field_correctness(self):
-       input_password_confirm = self.find_element(RegistrationPageLocators.INPUT_PASSWORD_CONFIRM)
-       input_password_confirm.clear()
-       input_password_confirm.send_keys('5623')
-       input_password_confirm.click()
-       result = input_password_confirm.number
-       assert result == "Пароль должен содержать хотя бы одну заглавную букву"
+        input_password_confirm = self.find_element(RegistrationPageLocators.INPUT_PASSWORD_CONFIRM)
+        input_password_confirm.clear()
+        input_password_confirm.send_keys('5623')
+        input_password_confirm.click()
+        result = input_password_confirm.number
+        assert result == "Пароль должен содержать хотя бы одну заглавную букву"
 
-     #Негативный тест TRK-038
+    # Негативный тест TRK-038
 
     def should_be_check_telefone_sending_sms(self):
         input_first_name = self.find_element(RegistrationPageLocators.INPUT_FIRST_NAME)

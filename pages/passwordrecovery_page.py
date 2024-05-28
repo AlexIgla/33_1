@@ -5,19 +5,21 @@ from locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLoc
 from selenium.webdriver.common.by import By
 import pytest
 
+url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/required-action?execution=UPDATE_PASSWORD '
+
 
 class PasswordRecoveryPage():
 
-#Номер тест-кейсов по порядку TRK-028
+    # Номер тест-кейсов по порядку TRK-028
 
     def should_be_newpassword_field_correctness(self):
-       input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
-       input_password_new.clear()
-       input_password_new.send_keys('678')
-       input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
-       input_password_confirm.click()
-       result = input_newpassword.number
-       assert result == "Длина пароля должна быть не менее 8 символов"
+        input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
+        input_password_new.clear()
+        input_password_new.send_keys('678')
+        input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
+        input_password_confirm.click()
+        result = input_newpassword.number
+        assert result == "Длина пароля должна быть не менее 8 символов"
 
     def should_be_newpassword_passwordconfirm_field_correctness(self):
         input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
@@ -30,7 +32,6 @@ class PasswordRecoveryPage():
         button_save.click()
         result = input_password_new.text, input_password_confirm.text
         assert result == "Пароли не совпадают"
-
 
     def should_be_newpassword_passwordconfirm_field_correctness(self):
         input_password_new = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_NEW)
@@ -49,6 +50,3 @@ class PasswordRecoveryPage():
         button_save.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?client_id=account_b2c&tab_id=P2FZFyPlzzE'
-
-https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?client_id=account_b2c&tab_id=g9mjQiS-zTw
-

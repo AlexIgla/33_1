@@ -1,7 +1,8 @@
 from .pages.recovery_page import RecoveryPage, url_recovery_page
 import pytest
 
-#Тесты идут по порядку
+
+# Тесты идут по порядку
 
 @pytest.mark.recovery_page
 class TestBodyFromRecoveryPage():
@@ -9,18 +10,22 @@ class TestBodyFromRecoveryPage():
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_recovery_form()
+
     def test_should_be_correctness_number_of_characters(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_correctness_number_of_characters()
+
     def test_should_be_password_recovery_check_registered_number(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_password_recovery_check_registered_number()
+
     def test_should_be_password_recovery_check_registered_mail(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_password_recovery_check_registered_mail()
+
     def test_should_be_button_comeback(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
@@ -34,12 +39,11 @@ class TestBodyFromRecoveryPage():
         main_page.should_be_correctness_number_of_characters()
 
     def test_should_be_button_comeback_main_page(browser):
-       main_page = RecoveryPage(browser, url_recovery_page)
-       main_page.open()
-       main_page.should_be_button_comeback_main_page()
+        main_page = RecoveryPage(browser, url_recovery_page)
+        main_page.open()
+        main_page.should_be_button_comeback_main_page()
 
     def test_should_be_mail_field_correctness(browser):
-       main_page = RecoveryPage(browser, url_recovery_page)
-       main_page.open()
-       main_page.should_be_mail_field_correctness()
-
+        main_page = RecoveryPage(browser, url_recovery_page)
+        main_page.open()
+        main_page.should_be_mail_field_correctness()
