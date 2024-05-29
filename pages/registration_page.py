@@ -24,14 +24,14 @@ class RegistrationPage():
     def open(self):
         self.browser.get(self.url)
 
-    #def should_be_register_link(self):
+    def should_be_register_link(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
         result = link
         assert result
 
-    #def should_be_field_first_name_correctness(self):
+    def should_be_field_first_name_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
@@ -45,7 +45,7 @@ class RegistrationPage():
         result = "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
         assert  result == "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
 
-    #def should_be_field_address_correctness(self):
+    def should_be_field_address_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
@@ -58,7 +58,7 @@ class RegistrationPage():
         result = "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
         assert result == "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
 
-    #def should_be_region_list(self):
+    def should_be_region_list(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
