@@ -30,15 +30,15 @@ class TestBodyFromMainPage():
         main_page.open()
         main_page.should_be_tab_click_telefon()
 
-    def test_should_be_mobile_number_field_correctness(self, browser):
+    def test_should_be_mobile_number_field_incorrectness(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
-        main_page.should_be_mobile_number_field_correctness()
+        main_page.should_be_mobile_number_field_incorrectness()
 
-    def test_should_be_field_correctness_phone_password(self, browser):
+    def test_should_be_password_field_incorrectness(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()
-        main_page.should_be_field_correctness_phone_password()
+        main_page.should_be_password_field_incorrectness()
 
         # pytest -v --tb=line -m test_main_page.py
 

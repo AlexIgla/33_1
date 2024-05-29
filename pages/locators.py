@@ -3,20 +3,21 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     LOGO_RTK = (By.CLASS_NAME, "rt-logo main-header__logo")
-    PAGE_LEFT = (By.ID, "page-left")
-    FORM_AUTORIZATION = (By.CLASS_NAME, "card-container__wrapper")
-    PAGE_RIGHT = (By.ID, "card-title")
+    PAGE_LEFT = (By.ID, "page-left")#OK
+    FORM_AUTORIZATION = (By.CLASS_NAME, "login-form")#OK
+    PAGE_RIGHT = (By.ID, "card-title")#OK
     TAB_PHONE = (By.ID, "t-btn-tab-phone")
     TAB_MAIL = (By.ID, "t-btn-tab-mail")
     TAB_LOGIN = (By.ID, "t-btn-tab-login")
     TAB_LS = (By.ID, "t-btn-tab-ls")
-    INPUT_PASSWORD = (By.ID, "password")
-    INPUT_PHONE = (By.ID, "username")
+    INPUT_PASSWORD = (By.ID, "password")#OK
+    INPUT_PHONE = (By.ID, "username")#OK
     INPUT_MAIL = (By.ID, "username")
     INPUT_LOGIN = (By.ID, "username")
     INPUT_LS = (By.ID, "username")
     LINK_REGISTER = (By.ID, "kc-register")
-    BUTTON_TO_COME_IN = (By.ID, "kc-login")
+    BUTTON_TO_COME_IN = (By.ID, "kc-login")#OK
+    CAPTCHA = (By.ID, 'captcha')
 
 
 class RecoveryPageLocators():

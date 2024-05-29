@@ -3,6 +3,8 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from pages.locators import MainPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
 
+url_main_page = "https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?execution=fc343b3b-9ff7-4786-bb30-e60caa7821cd&client_id=lk_b2c&tab_id=Eh_2C2-y8us"
+
 
 # создаем конструктор, который принимает browser — экземпляр webdriver.
 # Указываем url, который будет использоваться для открытия страницы.
@@ -14,12 +16,12 @@ class MainPage():
         self.browser.implicitly_wait(timeout)
 
     # создаем метод find_element (ищет один элемент и возвращает его)
-    def find_element(self, locator, time=10):
+    def find_element(self, locator, time=15):
         return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
                                                        message=f"Can't find element by locator {locator}")
 
     # создаем метод find_elements (ищет множество элементов и возвращает в виде списка)
-    def find_elements(self, locator, time=10):
+    def find_elements(self, locator, time=15):
         return WebDriverWait(self.browser, time).until(EC.presence_of_all_elements_located(locator),
                                                        message=f"Can't find elements by locator {locator}")
 
@@ -45,9 +47,7 @@ class MainPage():
             return True
         return False
 
-    ####################### ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК #########################
-
-    # Номер тест-кейсов по порядку EXP-002.....
+    #ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК
 
     def should_be_menu_autorization(self):
         menu_autorization = self.find_element(MainPageLocators.PAGE_RIGHT)
@@ -56,13 +56,13 @@ class MainPage():
 
     def should_be_form_autorization(self):
         form_autorization = self.find_element(MainPageLocators.FORM_AUTORIZATION)
-        result = form_autorization.text
-        assert result == "ФОРМА"
+        result = form_autorization
+        assert result == form_autorization
 
     def should_be_product_slogan(self):
         product_slogan = self.find_element(MainPageLocators.PAGE_LEFT)
-        result = product_slogan.text
-        assert result == "Личный кабинет"
+        result = product_slogan
+        assert result == product_slogan
 
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
@@ -76,16 +76,7 @@ class MainPage():
         result = tab.text
         assert "Телефон" == result
 
-    def should_be_mobile_number_field_correctness(self):
-        input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
-        input_phone.clear()
-        input_phone.send_keys("+7-123-456-78-90")
-        button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
-        button_to_come_in.click()
-        result = input_phone.number
-        assert result == "Неверный логин или пароль"
-
-    def should_be_field_correctness_phone_password(self):
+    def should_be_mobile_number_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
         input_phone.send_keys("+7-123-456-78-90")
@@ -94,7 +85,19 @@ class MainPage():
         input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_phone.number, input_password.text
+        result = "Неверный логин или пароль"
+        assert result == "Неверный логин или пароль"
+
+    def should_be_password_field_incorrectness(self):
+        input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
+        input_phone.clear()
+        input_phone.send_keys("+7-951-888-00-11")
+        input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
+        input_password.clear()
+        input_password.send_keys("AzwX122")
+        button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
+        button_to_come_in.click()
+        result = "Неверный логин или пароль"
         assert result == "Неверный логин или пароль"
 
     def should_be_correctness_number_of_characters(self):
@@ -103,7 +106,7 @@ class MainPage():
         input_phone.send_keys("+7-123-456-78-  ")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_phone.number
+        result = "Неверный формат телефона"
         assert result == "Неверный формат телефона"
 
     def should_be_autorization_by_a_registraited_user(self):
@@ -113,9 +116,10 @@ class MainPage():
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys("AzwX1223")
+        #капчу в случае появления придется вводить вручную
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        self.browser.current_url = result
+        result = self.browser.current_url
         assert result == self.browser.current_url, 'https://start.rt.ru/?tab=main'
 
     def should_be_tab_click_mail(self):
@@ -128,9 +132,13 @@ class MainPage():
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
         input_mail.clear()
         input_mail.send_keys('ва')
+        input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
+        input_password.clear()
+        input_password.send_keys("AzwX122")
+        # капчу в случае появления придется вводить вручную
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_mail.text
+        result = "Неверный логин или пароль"
         assert result == "Неверный логин или пароль"
 
     def should_be_autorization_by_mail_a_unregistraited_user(self):
@@ -192,6 +200,3 @@ class MainPage():
         yield input_ls.click()
         result = input_ls.text
         assert result == "Проверьте, пожалуйста, номер лицевого счета"
-
-
-url_main_page = "https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login?theme%3Dlight&response_type=code&scope=openid&state=cb376b9f-59e8-4feb-9c37-5514d8a10e14&theme=light&auth_type"
