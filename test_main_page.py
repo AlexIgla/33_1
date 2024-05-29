@@ -1,5 +1,4 @@
 from pages.main_page import MainPage, url_main_page
-from pages.locators import MainPageLocators, RecoveryPageLocators, RegistrationPageLocators
 import pytest
 from confest import browser
 

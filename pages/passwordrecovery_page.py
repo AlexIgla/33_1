@@ -1,9 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from pages.locators import PasswordRecoveryPageLocators
-from selenium.webdriver.common.by import By
-import pytest
 import time
 
 url_passwordrecovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login&response_type=code&scope=openid&state=2df89d71-6030-4435-82af-a52375a78cbe&theme&auth_type'
