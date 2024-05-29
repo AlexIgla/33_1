@@ -25,18 +25,25 @@ class RegistrationPage():
         self.browser.get(self.url)
 
     def should_be_register_link(self):
-        link = self.find_element(MainPageLocators.LINK_REGISTER)
-        result = link.text
-        assert "Зарегистрироваться" == result
+        enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
+        enter_pass.click()
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        result = link
+        assert result
 
     def should_be_field_first_name_correctness(self):
+        enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
+        enter_pass.click()
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        link.click()
         input_first_name = self.find_element(RegistrationPageLocators.INPUT_FIRST_NAME)
         input_first_name.clear()
         input_first_name.send_keys('As')
         button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
-        result = input_first_name.text
-        assert result == "Необходимо заполнить поле кириллицей. От 2 до 30 символов"
+        register_form = self.find_element(RegistrationPageLocators.REGISTER_FORM)
+        result = register_form.text
+        assert "Необходимо заполнить поле кириллицей. От 2 до 30 символов." == result
 
     def should_be_field_address_correctness(self):
         input_address = self.find_element(RegistrationPageLocators.INPUT_ADDRESS)
@@ -94,4 +101,4 @@ class RegistrationPage():
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'
 
 
-url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?client_id=account_b2c&tab_id=IAXuUBpcRk8'
+url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?response_type=code&scope=openid&client_id=lk_b2c&redirect_uri=https%3A%2F%2Flk-api.rt.ru%2Fsso-auth%2F%3Fredirect%3Dhttps%253A%252F%252Flk.rt.ru%252F&state=%7B%22uuid%22%3A%22AA2F2F32-0DC5-4B1E-840D-D26E7EE6A84A%22%7D'

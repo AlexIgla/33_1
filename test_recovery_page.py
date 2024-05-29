@@ -26,7 +26,7 @@ class TestBodyFromRecoveryPage():
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_password_recovery_check_registered_mail()
-
+##################
     def test_should_be_button_comeback(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()

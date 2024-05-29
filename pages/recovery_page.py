@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pages.locators import RecoveryPageLocators
 import time
 
-url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?client_id=lk_b2c&tab_id=nLVPbxa4uMQ'
+url_recovery_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?execution=400655d2-c988-4155-a840-341f26e97255&client_id=lk_b2c&tab_id=nLVPbxa4uMQ'
 
 
 class RecoveryPage():
@@ -57,7 +57,7 @@ class RecoveryPage():
         # вводим вручную код подтверждения
         result = 'https://start.rt.ru/?tab=main'
         assert result == self.browser.current_url, 'https://start.rt.ru/?tab=main'
-
+###############
     def should_be_button_comeback(self):
         link_comeback = self.find_element(RecoveryPageLocators.BUTTON_COMEBACK)
         link_comeback.click()
