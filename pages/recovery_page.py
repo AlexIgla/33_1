@@ -1,6 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from pages.locators import RecoveryPageLocators
+import time
 
 
 class RecoveryPage():

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="падают тесты но уже лучше">
+    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main_page и тесты к ней ок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_passwordrecovery_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_userp.executor": "Run",
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor": "Run",
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor": "Run",
     "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor": "Run",
@@ -61,6 +64,7 @@
     "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.executor": "Run",
     "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor": "Run",
     "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor": "Run",
@@ -95,7 +99,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness">
+  <component name="RunManager" selected="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -118,36 +122,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Example1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Example1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -163,7 +137,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_password_field_incorrectness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,11 +148,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_password_field_incorrectness&quot;" />
+      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,17 +163,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail&quot;" />
+      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Example1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Example1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save" />
+        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1" />
+        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness" />
+        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" />
         <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness" />
-        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail" />
-        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user" />
-        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters" />
-        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_password_field_incorrectness" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716955301332</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="main_page и тесты к ней ок">
+      <option name="closed" value="true" />
+      <created>1716979560688</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716979560688</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +320,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="падают тесты" />
     <MESSAGE value="падают тесты но уже лучше" />
-    <option name="LAST_COMMIT_MESSAGE" value="падают тесты но уже лучше" />
+    <MESSAGE value="main_page и тесты к ней ок" />
+    <option name="LAST_COMMIT_MESSAGE" value="main_page и тесты к ней ок" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -317,11 +330,6 @@
           <url>file://$PROJECT_DIR$/test_main_page.py</url>
           <line>40</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pages/main_page.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

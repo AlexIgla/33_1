@@ -12,17 +12,17 @@ class TestBodyFromPasswordRecoveryPage():
         main_page.open()
         main_page.should_be_newpassword_field_correctness()
 
-    def test_should_be_newpassword_passwordconfirm_field_correctness(self, browser):
+    def test_should_be_newpassword_passwordconfirm_field_correctness_1(self, browser):
         main_page = PasswordRecoveryPage(browser, url_passwordrecovery_page)
         main_page.open()
-        main_page.should_be_newpassword_passwordconfirm_field_correctness()
+        main_page.should_be_newpassword_passwordconfirm_field_correctness_1()
 
-    def test_should_be_newpassword_passwordconfirm_field_correctness(self, browser):
+    def test_should_be_newpassword_passwordconfirm_field_correctness_2(self, browser):
         main_page = PasswordRecoveryPage(browser, url_passwordrecovery_page)
         main_page.open()
-        main_page.should_be_newpassword_passwordconfirm_field_correctness()
+        main_page.should_be_newpassword_passwordconfirm_field_correctness_2()
 
-    def should_be_button_save(self, browser):
+    def test_should_be_button_save(self, browser):
         main_page = PasswordRecoveryPage(browser, url_passwordrecovery_page)
         main_page.open()
         main_page.should_be_button_save()

@@ -52,11 +52,6 @@ class TestBodyFromMainPage():
         main_page.open()
         main_page.should_be_autorization_by_a_registraited_user()
 
-    def test_should_be_autorization_by_a_registraited_user(self, browser):
-        main_page = MainPage(browser, url_main_page)
-        main_page.open()
-        main_page.should_be_autorization_by_a_registraited_user()
-
     def test_should_be_tab_click_mail(self, browser):
         main_page = MainPage(browser, url_main_page)
         main_page.open()

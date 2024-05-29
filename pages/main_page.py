@@ -2,26 +2,27 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from pages.locators import MainPageLocators
 from selenium.webdriver.support.ui import WebDriverWait
+import time
 
-url_main_page = "https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?execution=fc343b3b-9ff7-4786-bb30-e60caa7821cd&client_id=lk_b2c&tab_id=Eh_2C2-y8us"
+url_main_page = "https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?client_id=account_b2c&redirect_uri=https://b2c.passport.rt.ru/account_b2c/login&response_type=code&scope=openid&state=2df89d71-6030-4435-82af-a52375a78cbe&theme&auth_type"
 
 
 # создаем конструктор, который принимает browser — экземпляр webdriver.
 # Указываем url, который будет использоваться для открытия страницы.
 class MainPage():
-    def __init__(self, browser, url, timeout=5):
+    def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
         # команда для неявного ожидания со значением по умолчанию в 5c:
         self.browser.implicitly_wait(timeout)
 
     # создаем метод find_element (ищет один элемент и возвращает его)
-    def find_element(self, locator, time=15):
+    def find_element(self, locator, time=10):
         return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
                                                        message=f"Can't find element by locator {locator}")
 
     # создаем метод find_elements (ищет множество элементов и возвращает в виде списка)
-    def find_elements(self, locator, time=15):
+    def find_elements(self, locator, time=10):
         return WebDriverWait(self.browser, time).until(EC.presence_of_all_elements_located(locator),
                                                        message=f"Can't find elements by locator {locator}")
 
@@ -116,6 +117,7 @@ class MainPage():
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys("AzwX1223")
+        time.sleep(30)
         #капчу в случае появления придется вводить вручную
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
@@ -135,6 +137,7 @@ class MainPage():
         input_password = self.find_element(MainPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys("AzwX122")
+        time.sleep(30)
         # капчу в случае появления придется вводить вручную
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()

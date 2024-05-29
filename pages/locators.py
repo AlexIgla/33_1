@@ -6,10 +6,10 @@ class MainPageLocators:
     PAGE_LEFT = (By.ID, "page-left")#OK
     FORM_AUTORIZATION = (By.CLASS_NAME, "login-form")#OK
     PAGE_RIGHT = (By.ID, "card-title")#OK
-    TAB_PHONE = (By.ID, "t-btn-tab-phone")
-    TAB_MAIL = (By.ID, "t-btn-tab-mail")
-    TAB_LOGIN = (By.ID, "t-btn-tab-login")
-    TAB_LS = (By.ID, "t-btn-tab-ls")
+    TAB_PHONE = (By.ID, "t-btn-tab-phone")#OK
+    TAB_MAIL = (By.ID, "t-btn-tab-mail")#OK
+    TAB_LOGIN = (By.ID, "t-btn-tab-login")#OK
+    TAB_LS = (By.ID, "t-btn-tab-ls")#OK
     INPUT_PASSWORD = (By.ID, "password")#OK
     INPUT_PHONE = (By.ID, "username")#OK
     INPUT_MAIL = (By.ID, "username")
@@ -17,7 +17,7 @@ class MainPageLocators:
     INPUT_LS = (By.ID, "username")
     LINK_REGISTER = (By.ID, "kc-register")
     BUTTON_TO_COME_IN = (By.ID, "kc-login")#OK
-    CAPTCHA = (By.ID, 'captcha')
+    CAPTCHA = (By.ID, 'captcha')#OK
 
 
 class RecoveryPageLocators():
@@ -38,6 +38,11 @@ class RecoveryPageLocators():
 
 
 class PasswordRecoveryPageLocators():
+    FORGOT_PASSWORD = (By.ID, 'forgot_password')#OK
+    INPUT_PHONE = (By.ID, "username")#OK
+    RESET_BUTTON = (By.ID, 'reset')#OK
+    PHONE = (By.CLASS_NAME, 'rt-radio__circle')#OK
+    RESET_FORM_BUTTON = (By.ID, 'reset-form-submit')
     INPUT_PASSWORD_NEW = (By.ID, "password-new")
     INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")
     BUTTON_SAVE = (By.ID, "t-btn-reset-pass")
