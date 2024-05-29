@@ -17,12 +17,12 @@ class MainPage():
         self.browser.implicitly_wait(timeout)
 
     # создаем метод find_element (ищет один элемент и возвращает его)
-    def find_element(self, locator, time=10):
+    def find_element(self, locator, time=15):
         return WebDriverWait(self.browser, time).until(EC.presence_of_element_located(locator),
                                                        message=f"Can't find element by locator {locator}")
 
     # создаем метод find_elements (ищет множество элементов и возвращает в виде списка)
-    def find_elements(self, locator, time=10):
+    def find_elements(self, locator, time=15):
         return WebDriverWait(self.browser, time).until(EC.presence_of_all_elements_located(locator),
                                                        message=f"Can't find elements by locator {locator}")
 

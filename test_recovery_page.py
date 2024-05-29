@@ -12,7 +12,7 @@ class TestBodyFromRecoveryPage():
         main_page.open()
         main_page.should_be_recovery_form()
 
-    def test_should_be_correctness_number_of_characters(self, browser):
+    def test_should_be_incorrectness_number_of_characters(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_correctness_number_of_characters()

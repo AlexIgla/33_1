@@ -22,17 +22,11 @@ class MainPageLocators:
 
 class RecoveryPageLocators():
     PAGE_RIGHT = (By.ID, "card-title")
-    TAB_PHONE = (By.ID, "t-btn-tab-phone")
-    TAB_MAIL = (By.ID, "t-btn-tab-mail")
-    TAB_LOGIN = (By.ID, "t-btn-tab-login")
-    TAB_LS = (By.ID, "t-btn-tab-ls")
-    INPUT_PHONE = (By.ID, "username")
-    INPUT_MAIL = (By.ID, "username")
-    INPUT_LOGIN = (By.ID, "username")
-    INPUT_LS = (By.ID, "username")
+    ENTER_CODE = (By.ID, 'back_to_otp_btn')
+    INPUT_PHONE_MAIL = (By.ID, "address")
     INPUT_CAPCHA = (By.ID, "captcha")
-    BUTTON_COMEBACK = (By.ID, "reset-back")
-    BUTTON_CONTINUE = (By.ID, "reset")
+    BUTTON_COMEBACK = (By.ID, "standard_auth_btn")
+    BUTTON_CONTINUE = (By.ID, "otp_get_code")
     RECOVERY_FORM = (By.CLASS_NAME, "card-container_wrapper")
     CODE_INPUT_CONTAINER = (By.ID, "otp-code-timeout")
 
