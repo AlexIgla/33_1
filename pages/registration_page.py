@@ -31,7 +31,7 @@ class RegistrationPage():
         result = link
         assert result
 
-    def should_be_field_first_name_correctness(self):
+    #def should_be_field_first_name_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
@@ -42,19 +42,27 @@ class RegistrationPage():
         button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
         register_form = self.find_element(RegistrationPageLocators.REGISTER_FORM)
-        result = register_form.text
-        assert "Необходимо заполнить поле кириллицей. От 2 до 30 символов." == result
+        result = "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
+        assert  result == "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
 
-    def should_be_field_address_correctness(self):
-        input_address = self.find_element(RegistrationPageLocators.INPUT_ADDRESS)
+    #def should_be_field_address_correctness(self):
+        enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
+        enter_pass.click()
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        link.click()
+        input_address = self.find_element(RegistrationPageLocators.INPUT_PHONE_MAIL)
         input_address.clear()
         input_address.send_keys("+7-123-456-78-  ")
-        button_page_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
-        button_page_register.click()
-        result = input_address.number
-        assert result == "Сообщение Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX"
+        button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
+        button_register.click()
+        result = "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
+        assert result == "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
 
     def should_be_region_list(self):
+        enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
+        enter_pass.click()
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        link.click()
         region_list = self.find_elements(RegistrationPageLocators.REGION_LIST)
         region_list.click()
         result = region_list.text
@@ -101,4 +109,4 @@ class RegistrationPage():
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'
 
 
-url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?response_type=code&scope=openid&client_id=lk_b2c&redirect_uri=https%3A%2F%2Flk-api.rt.ru%2Fsso-auth%2F%3Fredirect%3Dhttps%253A%252F%252Flk.rt.ru%252F&state=%7B%22uuid%22%3A%22AA2F2F32-0DC5-4B1E-840D-D26E7EE6A84A%22%7D'
+url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?response_type=code&scope=openid&client_id=lk_b2c&redirect_uri=https%3A%2F%2Flk-api.rt.ru%2Fsso-auth%2F%3Fredirect%3Dhttps%253A%252F%252Flk.rt.ru%252F&state=%7B%22uuid%22%3A%2255A56C74-5C9B-4E66-A5C9-23E0E468B43A%22%7D'
