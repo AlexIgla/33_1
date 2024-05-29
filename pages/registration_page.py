@@ -24,11 +24,11 @@ class RegistrationPage():
     def open(self):
         self.browser.get(self.url)
 
-    def should_be_register_link(self):
+    #def should_be_register_link(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
-        link_register = self.find_element(RegistrationPageLocators.LINK_REGISTER)
-        result = link_register
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        result = link
         assert result
 
     #def should_be_field_first_name_correctness(self):
@@ -58,7 +58,7 @@ class RegistrationPage():
         result = "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
         assert result == "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
 
-    def should_be_region_list(self):
+    #def should_be_region_list(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
@@ -69,10 +69,15 @@ class RegistrationPage():
         assert result == "Регион"
 
     def should_be_password_field_correctness(self):
+        enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
+        enter_pass.click()
+        link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
+        link.click()
         input_password = self.find_element(RegistrationPageLocators.INPUT_PASSWORD)
         input_password.clear()
         input_password.send_keys('')
-        input_password.click()
+        button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
+        button_register.click()
         result = input_password.text
         assert result == "Длина пароля должна быть не менее 8 символов"
 
@@ -109,4 +114,4 @@ class RegistrationPage():
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'
 
 
-url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/protocol/openid-connect/auth?response_type=code&scope=openid&client_id=lk_b2c&redirect_uri=https%3A%2F%2Flk-api.rt.ru%2Fsso-auth%2F%3Fredirect%3Dhttps%253A%252F%252Flk.rt.ru%252F&state=%7B%22uuid%22%3A%22D99EA38E-7BAE-49BE-80EF-14294D9EBD22%22%7D'
+url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?client_id=lk_b2c&tab_id=vrMKSwMQTG0'

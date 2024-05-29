@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass и тесты к ним ок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link">
+  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -120,21 +122,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Example1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -164,6 +151,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Example1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -199,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" />
-        <item itemvalue="Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716999428986</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="main, pass и тесты к ним ок">
+      <option name="closed" value="true" />
+      <created>1717000336257</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717000336257</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,7 +380,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_main_page.py</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

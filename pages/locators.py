@@ -48,7 +48,6 @@ class RegistrationPageLocators():
     PAGE_LEFT = (By.ID, "page-left")
     INPUT_LAST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
     REGION_LIST = (By.CLASS_NAME, "rt-base-icon rt-base-icon--fill-path rt-select__arrow")
-
     INPUT_PASSWORD = (By.ID, "password")
     INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")
     REGISTER_FORM = (By.CLASS_NAME, 'rt-input-container__meta rt-input-container__meta--error')
