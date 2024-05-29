@@ -64,11 +64,11 @@ class MainPage():
         result = product_slogan.text
         assert result == "Личный кабинет"
 
-    #def should_be_tab_click_telefon(self):
-       #tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
-        #tab.click()
-        #result = tab.text
-        #assert "Телефон" == result
+    def should_be_tab_click_telefon(self):
+        tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
+        tab.click()
+        result = tab.text
+        assert "Телефон" == result
 
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE)

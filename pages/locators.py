@@ -10,7 +10,6 @@ class MainPageLocators:
     TAB_MAIL = (By.ID, "t-btn-tab-mail")
     TAB_LOGIN = (By.ID, "t-btn-tab-login")
     TAB_LS = (By.ID, "t-btn-tab-ls")
-    #INPUT_USERNAME = (By.ID, "username")#
     INPUT_PASSWORD = (By.ID, "password")
     INPUT_PHONE = (By.ID, "username")
     INPUT_MAIL = (By.ID, "username")
