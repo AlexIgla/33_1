@@ -44,7 +44,7 @@ class PasswordRecoveryPage():
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.click()
         result = "Длина пароля должна быть не менее 8 символов"
-        assert result == "Длина пароля должна быть не менее 8 символов"
+        assert result
 
     def should_be_newpassword_passwordconfirm_field_correctness_1(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)

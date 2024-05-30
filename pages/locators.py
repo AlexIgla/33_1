@@ -18,14 +18,10 @@ class MainPageLocators:
 
 
 class RecoveryPageLocators():
-    PAGE_RIGHT = (By.ID, "card-title")
-    ENTER_CODE = (By.ID, 'back_to_otp_btn')
-    INPUT_PHONE_MAIL = (By.ID, "address")
-    INPUT_CAPCHA = (By.ID, "captcha")
-    BUTTON_COMEBACK = (By.ID, "standard_auth_btn")
-    BUTTON_CONTINUE = (By.ID, "otp_get_code")
-    RECOVERY_FORM = (By.CLASS_NAME, "card-container_wrapper")
-    CODE_INPUT_CONTAINER = (By.ID, "otp-code-timeout")
+    PAGE_RIGHT = (By.ID, "card-title")#OK
+    INPUT_PHONE_MAIL = (By.ID, "address")#OK
+    BUTTON_COMEBACK = (By.ID, "standard_auth_btn")#OK
+    BUTTON_CONTINUE = (By.ID, "otp_get_code")#OK
 
 
 class PasswordRecoveryPageLocators():
@@ -33,10 +29,10 @@ class PasswordRecoveryPageLocators():
     INPUT_PHONE = (By.ID, "username")#OK
     RESET_BUTTON = (By.ID, 'reset')#OK
     PHONE = (By.CLASS_NAME, 'rt-radio__circle')#OK
-    RESET_FORM_BUTTON = (By.ID, 'reset-form-submit')
-    INPUT_PASSWORD_NEW = (By.ID, "password-new")
-    INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")
-    BUTTON_SAVE = (By.ID, "t-btn-reset-pass")
+    RESET_FORM_BUTTON = (By.ID, 'reset-form-submit')#OK
+    INPUT_PASSWORD_NEW = (By.ID, "password-new")#OK
+    INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")#OK
+    BUTTON_SAVE = (By.ID, "t-btn-reset-pass")#OK
 
 
 class RegistrationPageLocators():

@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass и тесты к ним ок">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recovery_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_recovery_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,65 +46,69 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_userp.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_incorrectness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_password_field_incorrectness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_product_slogan.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.test_should_be_form_autorization.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_main_page.test_should_be_menu_autorization.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_incorrectness_number_of_characters.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in 33_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_main_page.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_passwordrecovery_page.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_recovery_page.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_registration_page.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.confest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.locators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.passwordrecovery_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.recovery_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python.registration_page.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PycharmProjects/Example1/33_1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_user.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_a_registraited_userp.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_autorization_by_mail_a_unregistraited_user.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_correctness_number_of_characters.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_field_correctness_phone_password.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mail_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_mobile_number_field_incorrectness.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_password_field_incorrectness.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_product_slogan.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_login.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail.executor": "Run",
+    "Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon.executor": "Run",
+    "Python tests.Python tests for test_main_page.test_should_be_form_autorization.executor": "Run",
+    "Python tests.Python tests for test_main_page.test_should_be_menu_autorization.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_button_save.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_incorrectness_number_of_characters.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_number.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_recovery_form.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list.executor": "Run",
+    "Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link.executor": "Run",
+    "Python tests.Python tests in 33_1.executor": "Run",
+    "Python tests.Python tests in test_main_page.py.executor": "Run",
+    "Python tests.Python tests in test_passwordrecovery_page.py.executor": "Run",
+    "Python tests.Python tests in test_recovery_page.py.executor": "Run",
+    "Python tests.Python tests in test_registration_page.py.executor": "Run",
+    "Python.confest.executor": "Run",
+    "Python.locators.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main_page.executor": "Run",
+    "Python.passwordrecovery_page.executor": "Run",
+    "Python.recovery_page.executor": "Run",
+    "Python.registration_page.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/PycharmProjects/Example1/33_1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness">
+  <component name="RunManager" selected="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -122,7 +131,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +142,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,11 +157,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +172,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,11 +187,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,17 +202,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link&quot;" />
+      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback" />
+        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717002086606</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="main, pass и тесты к ним ок">
+      <option name="closed" value="true" />
+      <created>1717002612069</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717002612069</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,13 +410,18 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_main_page.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/passwordrecovery_page.py</url>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_recovery_page.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_recovery_page.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

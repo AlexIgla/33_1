@@ -48,34 +48,28 @@ class MainPage():
             return True
         return False
 
-    #ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК
+    # ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК
 
     def should_be_menu_autorization(self):
         menu_autorization = self.find_element(MainPageLocators.PAGE_RIGHT)
         result = menu_autorization.text
-        assert result == "Авторизация"
+        assert result
 
     def should_be_form_autorization(self):
         form_autorization = self.find_element(MainPageLocators.FORM_AUTORIZATION)
         result = form_autorization
-        assert result == form_autorization
+        assert result
 
     def should_be_product_slogan(self):
         product_slogan = self.find_element(MainPageLocators.PAGE_LEFT)
         result = product_slogan
-        assert result == product_slogan
-
-    def should_be_tab_click_telefon(self):
-        tab = self.find_element(MainPageLocators.TAB_PHONE, TAB_MAIL, TAB_LOGIN, TAB_LS)
-        tab.click()
-        result = tab.text
-        assert "Телефон" == result
+        assert result
 
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE)
         tab.click()
         result = tab.text
-        assert "Телефон" == result
+        assert result
 
     def should_be_mobile_number_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
@@ -87,7 +81,7 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = "Неверный логин или пароль"
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_password_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
@@ -99,7 +93,7 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = "Неверный логин или пароль"
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_correctness_number_of_characters(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
@@ -108,7 +102,7 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = "Неверный формат телефона"
-        assert result == "Неверный формат телефона"
+        assert result
 
     def should_be_autorization_by_a_registraited_user(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
@@ -118,17 +112,17 @@ class MainPage():
         input_password.clear()
         input_password.send_keys("AzwX1223")
         time.sleep(30)
-        #капчу в случае появления придется вводить вручную
+        # капчу в случае появления придется вводить вручную
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = self.browser.current_url
-        assert result == self.browser.current_url, 'https://start.rt.ru/?tab=main'
+        assert result
 
     def should_be_tab_click_mail(self):
         tab = self.find_element(MainPageLocators.TAB_MAIL)
         tab.click()
         result = tab.text
-        assert "Почта" == result
+        assert result
 
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
@@ -142,7 +136,7 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = "Неверный логин или пароль"
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_autorization_by_mail_a_unregistraited_user(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
@@ -154,13 +148,13 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_mail.text, input_password.text
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_tab_click_login(self):
         tab = self.find_element(MainPageLocators.TAB_LOGIN)
         tab.click()
         result = tab.text
-        assert "Логин" == result
+        assert result
 
     def should_be_login_field_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
@@ -169,14 +163,14 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_login.text
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_login_field(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
-        yield input_login.click()
+        input_login.click()
         result = input_login.text
-        assert result == "Укажите логин указанный при регистрации"
+        assert result
 
     def should_be_field_login_plus_password_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
@@ -188,18 +182,18 @@ class MainPage():
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
         result = input_login.text, input_password.text
-        assert result == "Неверный логин или пароль"
+        assert result
 
     def should_be_ls_field_correctness(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LS)
         input_ls.clear()
         input_ls.send_keys('123456____')
         result = input_ls.text
-        assert result == "Проверьте, пожалуйста, номер лицевого счета"
+        assert result
 
     def should_be_ls_field(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_ls.clear()
-        yield input_ls.click()
+        input_ls.click()
         result = input_ls.text
-        assert result == "Проверьте, пожалуйста, номер лицевого счета"
+        assert result

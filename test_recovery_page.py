@@ -15,7 +15,7 @@ class TestBodyFromRecoveryPage():
     def test_should_be_incorrectness_number_of_characters(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
-        main_page.should_be_correctness_number_of_characters()
+        main_page.should_be_incorrectness_number_of_characters()
 
     def test_should_be_password_recovery_check_registered_number(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
@@ -26,7 +26,7 @@ class TestBodyFromRecoveryPage():
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_password_recovery_check_registered_mail()
-##################
+
     def test_should_be_button_comeback(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
@@ -34,17 +34,17 @@ class TestBodyFromRecoveryPage():
 
         # pytest -v --tb=line -m test_recovery_page.py
 
-    def test_should_be_button_continue(browser):
+    def test_should_be_button_continue(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
-        main_page.should_be_correctness_number_of_characters()
+        main_page.should_be_button_continue()
 
-    def test_should_be_button_comeback_main_page(browser):
+    def test_should_be_button_comeback_main_page(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_button_comeback_main_page()
 
-    def test_should_be_mail_field_correctness(browser):
+    def test_should_be_mail_field_correctness(self, browser):
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_mail_field_correctness()
