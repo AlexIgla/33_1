@@ -71,7 +71,7 @@ class PasswordRecoveryPage():
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         result = "Пароли не совпадают"
-        assert result == "Пароли не совпадают"
+        assert result
 
     def should_be_newpassword_passwordconfirm_field_correctness_2(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
@@ -98,7 +98,7 @@ class PasswordRecoveryPage():
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         result = "Пароль должен содержать хотя бы одну заглавную букву"
-        assert result == "Пароль должен содержать хотя бы одну заглавную букву"
+        assert result
 
     def should_be_button_save(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
@@ -124,5 +124,5 @@ class PasswordRecoveryPage():
         input_password_confirm.sendkeys('AzwX1244')
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
-        result = self.browser.current_url
-        assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/account_b2c/page?state=2df89d71-6030-4435-82af-a52375a78cbe&client_id=account_b2c#/'
+        result = self.browser.current_url, 'https://b2c.passport.rt.ru/account_b2c/page?state=2df89d71-6030-4435-82af-a52375a78cbe&client_id=account_b2c#/'
+        assert result

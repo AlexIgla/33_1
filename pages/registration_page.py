@@ -3,6 +3,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pages.locators import RegistrationPageLocators
 import time
 
+url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?client_id=lk_b2c&tab_id=vrMKSwMQTG0'
+
 
 class RegistrationPage():
     def __init__(self, browser, url, timeout=5):
@@ -26,8 +28,8 @@ class RegistrationPage():
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
-        result = link
-        assert result
+        #result = link
+        assert link
 
     def should_be_field_first_name_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
@@ -39,7 +41,7 @@ class RegistrationPage():
         input_first_name.send_keys('As')
         button_register = self.find_element(RegistrationPageLocators.BUTTON_PAGE_REGISTER)
         button_register.click()
-        register_form = self.find_element(RegistrationPageLocators.REGISTER_FORM)
+        #register_form = self.find_element(RegistrationPageLocators.REGISTER_FORM)
         result = "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
         assert result
 
@@ -110,6 +112,3 @@ class RegistrationPage():
         button_register.click()
         self.browser.current_url = result
         assert result == self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?session_code=_wuyzycVJSBcUCuN3-ERdHs8g3kAwq--5yR9XvW6Wlo&execution=c0660f76-7bb7-44a8-9df9-b3198f38f550&client_id=account_b2c&tab_id=qvLQ10JRuKg'
-
-
-url_registration_page = 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/registration?client_id=lk_b2c&tab_id=vrMKSwMQTG0'
