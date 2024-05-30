@@ -24,12 +24,14 @@ class RegistrationPage():
     def open(self):
         self.browser.get(self.url)
 
+    # EXP-030
     def should_be_register_link(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
         link = self.find_element(RegistrationPageLocators.LINK_REGISTER)
         assert link
 
+    # EXP-031
     def should_be_field_first_name_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
@@ -45,6 +47,7 @@ class RegistrationPage():
         result = "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
         assert result
 
+    # EXP-032
     def should_be_field_address_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
@@ -60,6 +63,7 @@ class RegistrationPage():
         result = "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
         assert result
 
+    # EXP-033
     def should_be_region_list(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
@@ -68,6 +72,7 @@ class RegistrationPage():
         result = "Регион"
         assert result
 
+    # EXP-034
     def should_be_password_field_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
@@ -81,6 +86,7 @@ class RegistrationPage():
         result = "Длина пароля должна быть не менее 8 символов"
         assert result
 
+    # EXP-035
     def should_be_password_confirm_field_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
@@ -94,8 +100,7 @@ class RegistrationPage():
         result = "Пароль должен содержать хотя бы одну заглавную букву"
         assert result
 
-    # Негативный тест TRK-038
-
+    # EXP-036
     def should_be_check_telefone_sending_sms(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)
         enter_pass.click()
