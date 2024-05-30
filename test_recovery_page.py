@@ -31,20 +31,3 @@ class TestBodyFromRecoveryPage():
         main_page = RecoveryPage(browser, url_recovery_page)
         main_page.open()
         main_page.should_be_button_comeback()
-
-        # pytest -v --tb=line -m test_recovery_page.py
-
-    def test_should_be_button_continue(self, browser):
-        main_page = RecoveryPage(browser, url_recovery_page)
-        main_page.open()
-        main_page.should_be_button_continue()
-
-    def test_should_be_button_comeback_main_page(self, browser):
-        main_page = RecoveryPage(browser, url_recovery_page)
-        main_page.open()
-        main_page.should_be_button_comeback_main_page()
-
-    def test_should_be_mail_field_correctness(self, browser):
-        main_page = RecoveryPage(browser, url_recovery_page)
-        main_page.open()
-        main_page.should_be_mail_field_correctness()

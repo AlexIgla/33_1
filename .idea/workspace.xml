@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass, rec и тесты к ним ок">
+    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="ОК">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recovery_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms">
+  <component name="RunManager" selected="Python tests.Python tests in test_registration_page.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -131,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.TestBodyFromMainPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,11 +141,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.test_should_be_form_autorization" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,11 +156,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_should_be_form_autorization&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_passwordrecovery_page.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,11 +171,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_passwordrecovery_page.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_recovery_page.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,11 +186,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_recovery_page.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_registration_page.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,17 +201,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_registration_page.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_check_telefone_sending_sms" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_confirm_field_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_region_list" />
+        <item itemvalue="Python tests.Python tests in test_registration_page.py" />
+        <item itemvalue="Python tests.Python tests in test_recovery_page.py" />
+        <item itemvalue="Python tests.Python tests in test_passwordrecovery_page.py" />
+        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage" />
+        <item itemvalue="Python tests.Python tests for test_main_page.test_should_be_form_autorization" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717058540962</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ОК">
+      <option name="closed" value="true" />
+      <created>1717063835418</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717063835418</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +444,8 @@
     <MESSAGE value="main, pass и тесты к нем ок" />
     <MESSAGE value="main, pass и тесты к ним ок" />
     <MESSAGE value="main, pass, rec и тесты к ним ок" />
-    <option name="LAST_COMMIT_MESSAGE" value="main, pass, rec и тесты к ним ок" />
+    <MESSAGE value="ОК" />
+    <option name="LAST_COMMIT_MESSAGE" value="ОК" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,10 +457,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/registration_page.py</url>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_main_page.py</url>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_main_page.py</url>

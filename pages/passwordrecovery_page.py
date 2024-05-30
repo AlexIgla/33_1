@@ -20,8 +20,7 @@ class PasswordRecoveryPage():
     def open(self):
         self.browser.get(self.url)
 
-    # Номер тест-кейсов по порядку TRK-028
-
+    # EXP-021
     def should_be_newpassword_field_correctness(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
         forgot_password.click()
@@ -46,6 +45,7 @@ class PasswordRecoveryPage():
         result = "Длина пароля должна быть не менее 8 символов"
         assert result
 
+    # EXP-022
     def should_be_newpassword_passwordconfirm_field_correctness_1(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
         forgot_password.click()
@@ -73,6 +73,7 @@ class PasswordRecoveryPage():
         result = "Пароли не совпадают"
         assert result
 
+    # EXP-023
     def should_be_newpassword_passwordconfirm_field_correctness_2(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
         forgot_password.click()
@@ -100,6 +101,7 @@ class PasswordRecoveryPage():
         result = "Пароль должен содержать хотя бы одну заглавную букву"
         assert result
 
+    # EXP-024
     def should_be_button_save(self):
         forgot_password = self.find_element(PasswordRecoveryPageLocators.FORGOT_PASSWORD)
         forgot_password.click()
@@ -121,7 +123,7 @@ class PasswordRecoveryPage():
         input_password_new.sendkeys('AzwX1223')
         input_password_confirm = self.find_element(PasswordRecoveryPageLocators.INPUT_PASSWORD_CONFIRM)
         input_password_confirm.clear()
-        input_password_confirm.sendkeys('AzwX1244')
+        input_password_confirm.sendkeys('AzwX1223')
         button_save = self.find_element(PasswordRecoveryPageLocators.BUTTON_SAVE)
         button_save.click()
         result = self.browser.current_url, 'https://b2c.passport.rt.ru/account_b2c/page?state=2df89d71-6030-4435-82af-a52375a78cbe&client_id=account_b2c#/'

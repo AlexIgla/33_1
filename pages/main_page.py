@@ -49,27 +49,31 @@ class MainPage():
         return False
 
     # ДАЛЕЕ ИДУТ ОБЩИЕ ДЛЯ ВСЕХ СТРАНИЦ МЕТОДЫ ПРОВЕРОК
-
+    # EXP-001
     def should_be_menu_autorization(self):
         menu_autorization = self.find_element(MainPageLocators.PAGE_RIGHT)
         result = menu_autorization.text
         assert result
 
+    # EXP-002
     def should_be_form_autorization(self):
         form_autorization = self.find_element(MainPageLocators.FORM_AUTORIZATION)
         result = form_autorization
         assert result
 
+    # EXP-003
     def should_be_product_slogan(self):
         product_slogan = self.find_element(MainPageLocators.PAGE_LEFT)
         result = product_slogan
         assert result
 
+    # EXP-004
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE)
         tab.click()
         assert tab.text
 
+    # EXP-005
     def should_be_mobile_number_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
@@ -82,6 +86,7 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-006
     def should_be_password_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
@@ -94,6 +99,7 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-007
     def should_be_correctness_number_of_characters(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
@@ -103,6 +109,7 @@ class MainPage():
         result = "Неверный формат телефона"
         assert result
 
+    # EXP-008
     def should_be_autorization_by_a_registraited_user(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
         input_phone.clear()
@@ -117,12 +124,14 @@ class MainPage():
         result = self.browser.current_url
         assert result
 
+    # EXP-009
     def should_be_tab_click_mail(self):
         tab = self.find_element(MainPageLocators.TAB_MAIL)
         tab.click()
         result = "Почта"
         assert result
 
+    # EXP-010
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
         input_mail.clear()
@@ -137,6 +146,7 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-011
     def should_be_autorization_by_mail_a_unregistraited_user(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
         input_mail.clear()
@@ -149,12 +159,14 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-012
     def should_be_tab_click_login(self):
         tab = self.find_element(MainPageLocators.TAB_LOGIN)
         tab.click()
         result = tab.text
         assert result
 
+    # EXP-013
     def should_be_login_field_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
@@ -164,6 +176,7 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-014
     def should_be_login_field(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
@@ -171,6 +184,7 @@ class MainPage():
         result = input_login.text
         assert result
 
+    # EXP-015
     def should_be_field_login_plus_password_correctness(self):
         input_login = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_login.clear()
@@ -183,6 +197,7 @@ class MainPage():
         result = "Неверный логин или пароль"
         assert result
 
+    # EXP-019
     def should_be_ls_field_correctness(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LS)
         input_ls.clear()
@@ -190,6 +205,7 @@ class MainPage():
         result = "Проверьте, пожалуйста, номер лицевого счета"
         assert result
 
+    # EXP-020
     def should_be_ls_field(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_ls.clear()

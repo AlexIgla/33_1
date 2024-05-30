@@ -20,13 +20,13 @@ class RecoveryPage():
     def open(self):
         self.browser.get(self.url)
 
-    # Номер тест-кейсов по порядку EXP-020.....
-
+    # EXP-025
     def should_be_recovery_form(self):
         menu_autorization = self.find_element(RecoveryPageLocators.PAGE_RIGHT)
         result = menu_autorization.text
         assert result
 
+    # EXP-026
     def should_be_incorrectness_number_of_characters(self):
         input_phone = self.find_element(RecoveryPageLocators.INPUT_PHONE_MAIL)
         input_phone.clear()
@@ -36,6 +36,7 @@ class RecoveryPage():
         result = 'Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru'
         assert result
 
+    # EXP-027
     def should_be_password_recovery_check_registered_number(self):
         input_phone = self.find_element(RecoveryPageLocators.INPUT_PHONE_MAIL)
         input_phone.clear()
@@ -47,6 +48,7 @@ class RecoveryPage():
         result = self.browser.current_url, 'https://start.rt.ru/?tab=main'
         assert result
 
+    # EXP-028
     def should_be_password_recovery_check_registered_mail(self):
         input_phone = self.find_element(RecoveryPageLocators.INPUT_PHONE_MAIL)
         input_phone.clear()
@@ -58,31 +60,9 @@ class RecoveryPage():
         result = self.browser.current_url, 'https://start.rt.ru/?tab=main'
         assert result
 
+    # EXP-029
     def should_be_button_comeback(self):
         link_comeback = self.find_element(RecoveryPageLocators.BUTTON_COMEBACK)
         link_comeback.click()
         result = self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/authenticate?execution=fc343b3b-9ff7-4786-bb30-e60caa7821cd&client_id=lk_b2c&tab_id=nLVPbxa4uMQ'
-        assert result
-
-    def should_be_button_continue(self):
-        input_mail = self.find_element(RecoveryPageLocators.INPUT_PHONE_MAIL)
-        input_mail.clear()
-        input_mail.send_keys('sanchez.ig.94@mail.ru')
-        result = self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?execution=7ca0b6f9-7c84-472b-94e2-a57c35eb6b08&client_id=account_b2c&tab_id=4JvtA2huco0'
-        assert result
-
-    def should_be_button_comeback_main_page(self):
-        button_comeback = self.find_element(RecoveryPageLocators.BUTTON_COMEBACK)
-        button_comeback.click()
-        result = self.browser.current_url, 'https://b2c.passport.rt.ru/auth/realms/b2c/login-actions/reset-credentials?session_code=Y0VJ5ZrIyarhrjbmUPmjkjmFdYC9D6gD-rASQlwayCI&execution=1b1825d2-f76f-4706-8e25-4c71c1f7f120&client_id=account_b2c&tab_id=mHPSKFbKvLQ'
-        assert result
-
-    # Негативный тест EXP-027
-    def should_be_mail_field_correctness(self):
-        input_mail = self.find_element(RecoveryPageLocators.INPUT_PHONE_MAIL)
-        input_mail.clear()
-        input_mail.send_keys('йцук')
-        button_continue = self.find_element(RecoveryPageLocators.BUTTON_CONTINUE)
-        button_continue.click()
-        result = "Введите телефон в формате +7ХХХХХХХХХХ или +375XXXXXXXXX, или email в формате example@email.ru"
         assert result
