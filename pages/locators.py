@@ -40,7 +40,7 @@ class RegistrationPageLocators():
     LINK_REGISTER = (By.ID, "kc-register")  # OK
     INPUT_FIRST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")#OK
     BUTTON_PAGE_REGISTER = (By.CLASS_NAME, "rt-btn rt-btn--orange rt-btn--medium rt-btn--rounded register-form__reg-btn")#OK
-    INPUT_PHONE_MAIL = (By.ID, "address")
+    INPUT_PHONE_MAIL = (By.ID, "address")  # OK
     PAGE_LEFT = (By.ID, "page-left")
     INPUT_LAST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
     REGION_LIST = (By.CLASS_NAME, "rt-base-icon rt-base-icon--fill-path rt-select__arrow")

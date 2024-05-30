@@ -1,9 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
-from pages.locators import MainPageLocators, RegistrationPageLocators
-from selenium.webdriver.common.by import By
-import pytest
+from pages.locators import RegistrationPageLocators
+import time
 
 
 class RegistrationPage():
@@ -43,7 +41,7 @@ class RegistrationPage():
         button_register.click()
         register_form = self.find_element(RegistrationPageLocators.REGISTER_FORM)
         result = "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
-        assert  result == "Необходимо заполнить поле кириллицей. От 2 до 30 символов."
+        assert result
 
     def should_be_field_address_correctness(self):
         enter_pass = self.find_element(RegistrationPageLocators.ENTER_PASS)

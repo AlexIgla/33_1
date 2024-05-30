@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass и тесты к ним ок">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/passwordrecovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/passwordrecovery_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/recovery_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_recovery_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_recovery_page.py" afterDir="false" />
+    <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass, rec и тесты к ним ок">
+      <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +65,7 @@
     "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness.executor": "Run",
     "Python tests.Python tests for test_passwordrecovery_page.TestBodyFromPasswordRecoveryPage.test_should_be_newpassword_passwordconfirm_field_correctness_1.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback.executor": "Run",
+    "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_correctness_number_of_characters.executor": "Run",
     "Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_incorrectness_number_of_characters.executor": "Run",
@@ -108,7 +104,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page">
+  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -191,7 +187,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,17 +198,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail&quot;" />
+      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" />
         <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page" />
         <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_continue" />
         <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_mail_field_correctness" />
         <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback" />
-        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_password_recovery_check_registered_mail" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717002612069</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="main, pass, rec и тесты к ним ок">
+      <option name="closed" value="true" />
+      <created>1717055704100</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717055704100</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +408,8 @@
     <MESSAGE value="main_page и тесты к ней ок" />
     <MESSAGE value="main, pass и тесты к нем ок" />
     <MESSAGE value="main, pass и тесты к ним ок" />
-    <option name="LAST_COMMIT_MESSAGE" value="main, pass и тесты к ним ок" />
+    <MESSAGE value="main, pass, rec и тесты к ним ок" />
+    <option name="LAST_COMMIT_MESSAGE" value="main, pass, rec и тесты к ним ок" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -412,16 +417,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/passwordrecovery_page.py</url>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_recovery_page.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test_recovery_page.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
