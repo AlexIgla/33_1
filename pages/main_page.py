@@ -68,8 +68,7 @@ class MainPage():
     def should_be_tab_click_telefon(self):
         tab = self.find_element(MainPageLocators.TAB_PHONE)
         tab.click()
-        result = tab.text
-        assert result
+        assert tab.text
 
     def should_be_mobile_number_field_incorrectness(self):
         input_phone = self.find_element(MainPageLocators.INPUT_PHONE)
@@ -121,8 +120,7 @@ class MainPage():
     def should_be_tab_click_mail(self):
         tab = self.find_element(MainPageLocators.TAB_MAIL)
         tab.click()
-        result = tab.text
-        assert result
+        assert tab.text
 
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)

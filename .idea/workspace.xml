@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5968495-0a85-4f6d-8f60-3648ed843f45" name="Changes" comment="main, pass, rec и тесты к ним ок">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/registration_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registration_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <recent name="C:\PycharmProjects\Example1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link">
+  <component name="RunManager" selected="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
@@ -128,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Example1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,7 +138,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Example1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -155,21 +169,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Example1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -205,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_telefon" />
+        <item itemvalue="Python tests.Python tests for test_main_page.TestBodyFromMainPage.test_should_be_tab_click_mail" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_register_link" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_password_field_correctness" />
         <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_address_correctness" />
-        <item itemvalue="Python tests.Python tests for test_registration_page.TestBodyFromRegistrationPage.test_should_be_field_first_name_correctness" />
-        <item itemvalue="Python tests.Python tests for test_recovery_page.TestBodyFromRecoveryPage.test_should_be_button_comeback_main_page" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717056220348</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="main, pass, rec и тесты к ним ок">
+      <option name="closed" value="true" />
+      <created>1717058289694</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717058289694</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -434,6 +441,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test_main_page.py</url>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test_main_page.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
