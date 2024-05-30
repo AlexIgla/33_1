@@ -34,12 +34,12 @@ class TestBodyFromRegistrationPage():
 
         # pytest -v --tb=line -m test_registration_page.py
 
-    def test_should_be_password_confirm_field_correctness(browser):
+    def test_should_be_password_confirm_field_correctness(self, browser):
         main_page = RegistrationPage(browser, url_registration_page)
         main_page.open()
         main_page.should_be_password_confirm_field_correctness()
 
-    def test_should_be_check_telefone_sending_sms(browser):
+    def test_should_be_check_telefone_sending_sms(self, browser):
         main_page = RegistrationPage(browser, url_registration_page)
         main_page.open()
         main_page.should_be_check_telefone_sending_sms()

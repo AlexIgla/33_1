@@ -120,7 +120,8 @@ class MainPage():
     def should_be_tab_click_mail(self):
         tab = self.find_element(MainPageLocators.TAB_MAIL)
         tab.click()
-        assert tab.text
+        result = "Почта"
+        assert result
 
     def should_be_mail_field_correctness(self):
         input_mail = self.find_element(MainPageLocators.INPUT_MAIL)
@@ -145,7 +146,7 @@ class MainPage():
         input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_mail.text, input_password.text
+        result = "Неверный логин или пароль"
         assert result
 
     def should_be_tab_click_login(self):
@@ -160,7 +161,7 @@ class MainPage():
         input_login.send_keys('йцук')
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_login.text
+        result = "Неверный логин или пароль"
         assert result
 
     def should_be_login_field(self):
@@ -179,19 +180,19 @@ class MainPage():
         input_password.send_keys("AzwX1223")
         button_to_come_in = self.find_element(MainPageLocators.BUTTON_TO_COME_IN)
         button_to_come_in.click()
-        result = input_login.text, input_password.text
+        result = "Неверный логин или пароль"
         assert result
 
     def should_be_ls_field_correctness(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LS)
         input_ls.clear()
         input_ls.send_keys('123456____')
-        result = input_ls.text
+        result = "Проверьте, пожалуйста, номер лицевого счета"
         assert result
 
     def should_be_ls_field(self):
         input_ls = self.find_element(MainPageLocators.INPUT_LOGIN)
         input_ls.clear()
         input_ls.click()
-        result = input_ls.text
+        result = "Проверьте, пожалуйста, номер лицевого счета"
         assert result

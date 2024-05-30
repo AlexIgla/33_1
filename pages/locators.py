@@ -36,15 +36,13 @@ class PasswordRecoveryPageLocators():
 
 
 class RegistrationPageLocators():
-    ENTER_PASS = (By.ID, 'standard_auth_btn')  # OK
-    LINK_REGISTER = (By.ID, "kc-register")  # OK
-    INPUT_FIRST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")#OK
-    BUTTON_PAGE_REGISTER = (By.CLASS_NAME, "rt-btn rt-btn--orange rt-btn--medium rt-btn--rounded register-form__reg-btn")#OK
-    INPUT_PHONE_MAIL = (By.ID, "address")  # OK
-    PAGE_LEFT = (By.ID, "page-left")
-    INPUT_LAST_NAME = (By.CLASS_NAME, "rt-input__input rt-input__input--rounded rt-input__input--orange")
-    REGION_LIST = (By.CLASS_NAME, "rt-base-icon rt-base-icon--fill-path rt-select__arrow")
-    INPUT_PASSWORD = (By.ID, "password")
-    INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")
-    REGISTER_FORM = (By.CLASS_NAME, 'rt-input-container__meta rt-input-container__meta--error')
+    ENTER_PASS = (By.ID, 'standard_auth_btn')#OK
+    LINK_REGISTER = (By.ID, "kc-register")#OK
+    INPUT_FIRST_NAME = (By.NAME, "firstName")#OK
+    BUTTON_PAGE_REGISTER = (By.NAME, "register")#OK
+    INPUT_PHONE_MAIL = (By.ID, "address")#OK
+    INPUT_LAST_NAME = (By.NAME, "lastName")#OK
+    INPUT_PASSWORD = (By.ID, "password")#OK
+    INPUT_PASSWORD_CONFIRM = (By.ID, "password-confirm")#OK
+    REGISTER_FORM = (By.NAME, 'register')#OK
 
