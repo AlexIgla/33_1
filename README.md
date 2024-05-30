@@ -20,6 +20,8 @@
 5. Браузер Google Chrome 114.0.5735.199;
 6. Драйвер ChromeDriver 114.0.5735.90.
 
+Багов не обнаружено.
+Три потенциально  возможных дефекта - не отправляется код восстановления пароля, нечитаемая капча, отсутствие нужного региона на странице регистрации.
 С тест-кейсами можно ознакомиться по ссылке: https://docs.google.com/spreadsheets/d/1JvrkekYm-PMxkd0aQb3cd77HIu412sDE/edit?usp=sharing&ouid=113009641680443339722&rtpof=true&sd=true
 В папке pages в файле main_page.py находится конструктор webdriver и общие для всех тестируемых страниц методы.
 В папке pages в файлах main_page.py, recovery_page.py, passwordrecovery_page.py, registration_page.py находятся методы для соответствующих тестируемых страниц.
